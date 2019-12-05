@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi aplicación de sokets</title>
+        <!-- la libreria socket.io se va a utilizar en ambas partes, hay que importarla aqui también-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>Mi chat con IO.Socket</h1>
+        <div id="messages"></div>
+
+        <br><br>
+
+        <form onsubmit="return anadirMensaje()">
+            <input type="text" id="author" placeholder="author">
+            <input type="text" id="texto" placeholder="texto">
+            <input type="submit" value="enviar">
+        </form>
+        
+    </body>
+</html>
